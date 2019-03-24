@@ -58,6 +58,11 @@ button > a {
 
 }
 
+.btn-light {
+  border-radius: 20em;
+  margin-bottom: 0.2em;
+}
+
 .btn-primary {
   background-color: white;
   color: #000;
@@ -89,6 +94,10 @@ button > a {
 
 a {
   vertical-align: middle;
+}
+
+p {
+  font-size: 0.85em;
 }
 
 img:hover {

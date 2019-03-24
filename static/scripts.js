@@ -28,7 +28,7 @@ $('#step4Weekly').on('click', (evt) => {
 
 })
 
-$('#step5Free').on('click', (evt) => {
+$('#step5Fifty').on('click', (evt) => {
   evt.preventDefault();
   $('#step5').slideUp("slow");
   $('#step6').fadeIn("slow");
@@ -36,7 +36,7 @@ $('#step5Free').on('click', (evt) => {
 
 })
 
-$('#step6Weekly').on('click', (evt) => {
+$('#step6Person').on('click', (evt) => {
   evt.preventDefault();
   $('#step6').slideUp("slow");
   $('#step7').fadeIn("slow");
