@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %} Title here {% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light ">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <div class="justify-content-end">
+        <a class="" href="/top-40"> </a>
+        <a class="" href="/explore">  </a>
+        <a class="" href="/logout">  </a>
+      </div>
+    </nav>
+
+    <div class="container-fluid text-center landing h-50">
+      <div class="landing-text">
+        <h1>Let us help you become the best version of yourself.</h1>
+      </div>
+      <div>
+        <a href="#questions" class="btn btn-secondary mb-1">Get started</a>
+      </div>
+      <img id="landing-img" src="https://hmh.sfo2.digitaloceanspaces.com/undraw_country_side_ayop.png" alt="">
+    </div>
+
+    <div class="container-fluid" id="questions">
+      <a name="questions"></a>
+      <!-- <div id="triangle">
+
+      </div> -->
+      <!-- <div id="progress-icons">
+        1 2 3 4 5 6 7
+      </div> -->
+      <div id="progress">
+
+      </div>
+      <div class="row mx-auto p-3 text-center">
+
+        <!-- <div class="col-3 mx-auto">
+          <ul class="mx-auto align-self-right">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div> -->
+
+        <!-- <div class="col-9 mx-auto p-3 text-center"> -->
+          <form class="mx-auto" id="step1">
+            <h2>Is this your first time seeking help?</h2>
+            <button class="btn btn-primary" id="step1Yes">Yes</button>
+            <button href="#" class="btn btn-primary">No</button>
+
+            <!-- <button type="submit" class="btn btn-primary">Next</button> -->
+            <!-- <input type="submit" class="btn btn-primary"> -->
+          </form>
+
+          <form class="mx-auto" id="step2" style="display:none;">
+            <h2>What can we help with?</h2>
+
+            <button class="btn btn-primary" id="step2Identity">Identity</button>
+            <button class="btn btn-primary" id="step2SelfCare">Self-care</button>
+            <button class="btn btn-primary" id="step2Relationships">Relationships</button>
+            <button class="btn btn-primary" id="step2Workplace">Workplace</button>
+            <button class="btn btn-primary" id="step2Trauma">Traumatic experience</button>
+            <button class="btn btn-primary" id="step2Idk">I'm not sure</button>
+          </form>
+
+          <form class="mx-auto" id="step3" style="display:none;">
+
+            <h2>Tell us more about the relationship.</h2>
+
+            <button class="btn btn-primary" id="step3Family">Family</button>
+            <button class="btn btn-primary" id="step3Work">Work</button>
+            <button class="btn btn-primary" id="step3SO">Significant Other</button>
+            <button class="btn btn-primary" id="step3Friend">Friend</button>
+            <button class="btn btn-primary" id="step3Other">Other</button>
+
+          </form>
+
+          <form class="mx-auto" id="step4" style="display:none;">
+
+            <h2>Let's find out what works best for you</h2>
+            <h6>How much time can you commit?</h6>
+
+            <button class="btn btn-primary" id="step4Weekly">Weekly</button>
+            <button class="btn btn-primary" id="step4Work">Monthly</button>
+            <button class="btn btn-primary" id="step4More">More frequently</button>
+            <button class="btn btn-primary" id="step4Whenever">Whenever I need</button>
+
+          </form>
+
+          <form class="mx-auto" id="step5" style="display:none;">
+
+            <h2>What's your budget?</h2>
+
+            <button class="btn btn-primary" id="step5Free">Free</button>
+            <button class="btn btn-primary" id="step520">$20/session</button>
+            <button class="btn btn-primary" id="step530">$30/session</button>
+            <button class="btn btn-primary" id="step540">$40+/session</button>
+            <button class="btn btn-primary" id="step5Idk">I don't know</button>
+
+          </form>
+
+
+          <form class="mx-auto" id="step6" style="display:none;">
+
+            <h2>What kind of communication works best for you?</h2>
+
+            <button class="btn btn-primary" id="step6Weekly">In person</button>
+            <button class="btn btn-primary" id="step520">Phone calls</button>
+            <button class="btn btn-primary" id="step530">Video calls</button>
+            <button class="btn btn-primary" id="step540">Self-help resources</button>
+            <button class="btn btn-primary" id="step5Idk">Texting</button>
+
+          </form>
+
+          <form class="mx-auto" id="step7" style="display:none;">
+
+            <h2>How do you want to improve your relationships?</h2>
+
+            <button class="btn btn-primary" id="step7Workplace">In person</button>
+            <button class="btn btn-primary" id="step7More">More relationships</button>
+            <button class="btn btn-primary" id="step7Mend">Mend a relationship</button>
+            <button class="btn btn-primary" id="step7Talk">Just talk to someone</button>
+            <button class="btn btn-primary" id="step7Other">Other</button>
+
+          </form>
+
+
+        <!-- </div> -->
+      </div>
+
+    </div>
+
+    <div class="container-fluid" id="results">
+      <h2 class="text-center">We found some ways for you to get help.</h2>
+      <div class="row psych-info mx-auto">
+        <div class="col-2">
+          <img class="thumb mx-auto" src="https://hmh.sfo2.digitaloceanspaces.com/psych1.jpg" alt="">
+        </div>
+        <div class="col-6">
+            <h4 class="">Roger Brown, M.D.</h4>
+            <p>Dr. Brown is part of the core faculty at the John Muir Health family medicine residency program and a volunteer assistant clinical professor.</p>
+        </div>
+        <div class="col-4">
+
+        </div>
+
+      </div>
+
+      <div class="row psych-info mx-auto">
+        <div class="col-2">
+          <img class="thumb mx-auto" src="https://hmh.sfo2.digitaloceanspaces.com/psych2.jpg" alt="">
+        </div>
+        <div class="col-6">
+          <h4 class="">Tracy Miller, LCSW</h4>
+          <p>My work as a Reiki practitioner informs a mind/body approach. Relaxation techniques including deep breathing and meditation.</p>
+        </div>
+        <div class="col-4">
+
+        </div>
+      </div>
+
+      <div class="row psych-info mx-auto">
+        <div class="col-2">
+          <img class="thumb mx-auto" src="https://hmh.sfo2.digitaloceanspaces.com/psych3.jpg" alt="">
+        </div>
+        <div class="col-6">
+          <h4 class="">Chris Thompson, MSW</h4>
+          <p>My approach will help to develop insight, articulate goals and formulate plans of action that are clearly defined, easily stated and time limited.</p>
+        </div>
+        <div class="col-4">
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-6">
+          <h3>Articles</h3>
+          <div class="row pl-3">
+            <h6 class="btn btn-light">Emotional regulation</h6>
+          </div>
+          <div class="row pl-3">
+            <h6 class="btn btn-light">Trust issues</h6>
+          </div>
+        </div>
+        <div class="col-6">
+          <h3>Other resources</h3>
+          <div class="row pl-3">
+            <h6 class="btn btn-light">Headspace</h6>
+          </div>
+          <div class="row pl-3">
+            <h6 class="btn btn-light">Calm</h6>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/babel" src="/static/scripts.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  </body>
+</html>
