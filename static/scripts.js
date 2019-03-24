@@ -44,7 +44,7 @@ $('#step6Weekly').on('click', (evt) => {
 
 })
 
-$('#step7More').on('click', (evt) => {
+$('#step7Mend').on('click', (evt) => {
   evt.preventDefault();
   $('#questions').slideUp("slow");
   $('#results').fadeIn("slow");

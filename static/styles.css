@@ -29,6 +29,7 @@ button > a {
   padding: .5em 1em;
   background-color: #4A5FEE;
   color: white;
+  border-color: #4A5FEE;
 }
 
 .btn-secondary:hover {
@@ -37,6 +38,24 @@ button > a {
   background-color: #fff;
   color: #4A5FEE;
   border-color: #4A5FEE;
+}
+
+.btn-warning {
+  border-radius: 20em;
+  padding: .5em 1em;
+  color: #000;
+  background-color: white;
+  border-color: #FFDD6E;
+  margin-bottom: 0.2em;
+}
+
+.btn-warning:hover {
+  border-radius: 20em;
+  padding: .5em 1em;
+  background-color: #FFDD6E;
+  color: #fff;
+  border-color: #FFDD6E;
+
 }
 
 .btn-primary {
@@ -49,6 +68,7 @@ button > a {
   border-color: #FFDD6E;
   border-radius: 20em;
 }
+
 
 .btn-primary:hover {
   background-color: #FFDD6E;
@@ -69,6 +89,10 @@ button > a {
 
 a {
   vertical-align: middle;
+}
+
+img:hover {
+  opacity: 0.8;
 }
 
 .landing {
@@ -100,7 +124,7 @@ a {
 }
 
 #progress {
-  border-top: 5px solid #50CCBE;
+  border-top: 5px solid #da7185;
   width: 8%;
   margin-left: 14em;
 }
@@ -132,14 +156,36 @@ background: #FFF7DF;
   }
 }
 
+#results {
+  /* background: linear-gradient(180deg, rgb(74, 95, 238) 200px,#fff 0); */
+}
+
 .psych-info {
-  border: 1px solid black;
+  border: 1px solid rgb(74, 95, 238);
   border-radius: 5px;
   padding: 2em;
   margin: 2em 1em;
   width: 75%;
+  background: #fff;
+}
+
+.resources {
+  max-width: 20em;
+  margin: 1em 1em 1em 0;
 }
 
 .ml-10 {
   margin-top: 10em;
+}
+
+.pl-10 {
+  padding-left: 10em;
+}
+
+.txt-white {
+  color: white;
+}
+
+.mw-25 {
+  max-width: 25em;
 }
