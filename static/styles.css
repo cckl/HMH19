@@ -40,6 +40,12 @@ button > a {
   border-color: #4A5FEE;
 }
 
+.squish {
+  padding: .2em .5em!important;
+  font-size: 1em;
+  margin-bottom: .5em;
+}
+
 .btn-warning {
   border-radius: 20em;
   padding: .5em 1em;
@@ -126,6 +132,20 @@ img:hover {
   max-width: 7em;
 }
 
+.subtitle {
+  margin-top: .5em;
+}
+
+.bg-light {
+  background-color: #fff!important;
+  border-bottom: 1px solid #4a5fee;
+}
+
+#brand-icon {
+  max-width: 30px;
+  max-height: 30px;
+}
+
 #progress-icons {
   margin-left: 14em;
   width: 64%;
@@ -197,4 +217,8 @@ background: #FFF7DF;
 
 .mw-25 {
   max-width: 25em;
+}
+
+.inline {
+  display: inline;
 }
