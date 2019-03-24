@@ -1,5 +1,5 @@
 # UCSF Hack Mental Health 2019
-#LevelUp
+# LevelUp
 
 LevelUp connects millennials who don't know what their options are for mental health services with the best therapists, articles, and apps to help them with their problem.
 
